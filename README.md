@@ -37,8 +37,8 @@ Google Colab (recommended) or local Jupyter notebook
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/agentic-rag-pipeline.git
-cd agentic-rag-pipeline
+git clone https://github.com/sanyamsh7/Agentic-RAG-Pipeline-From-Scratch.git
+cd Agentic-RAG-Pipeline-From-Scratch
 
 # Install dependencies
 pip install -q langchain langchain-community langchain-chroma
