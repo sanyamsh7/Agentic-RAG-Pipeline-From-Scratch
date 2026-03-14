@@ -44,28 +44,6 @@ pip install -q langchain langchain-community langchain-chroma
 pip install -q transformers torch sentence-transformers chromadb
 ```
 
-### Run Your First RAG Pipeline
-
-```python
-# Open Module 6 (Complete System) in Google Colab or Jupyter
-# Run all cells
-
-# Or use the production class directly:
-from module_6_agentic_layer import AgenticRAG
-
-# Initialize with your documents
-rag_system = AgenticRAG(
-    documents=your_documents,
-    llm=llm,
-    routing_strategy="hybrid"  # Best performance
-)
-
-# Ask questions!
-result = rag_system.ask("What were our Q3 sales?")
-print(result['answer'])
-print(result['sources'])
-```
-
 ---
 
 ## 📚 The 6-Module Journey
@@ -82,8 +60,6 @@ Each module is self-contained with detailed explanations, working code, and hand
 
 **Key takeaway:** Metadata (source, page number) is crucial for citations
 
-**File:** `module_1_document_loading.py`
-
 ---
 
 ### **Module 2: Text Chunking** ✂️
@@ -95,8 +71,6 @@ Each module is self-contained with detailed explanations, working code, and hand
 - RecursiveCharacterTextSplitter strategy
 
 **Key takeaway:** 10-20% overlap is essential for preserving context across boundaries
-
-**File:** `module_2_text_chunking.py`
 
 **Recommended settings:**
 ```python
@@ -116,8 +90,6 @@ chunk_overlap = 80-120 characters (15-20%)
 
 **Key takeaway:** Embeddings enable semantic search (find "puppy" when searching for "dog")
 
-**File:** `module_3_embeddings.py`
-
 **Model used:** `all-MiniLM-L6-v2` (384 dimensions, fast, accurate)
 
 ---
@@ -131,8 +103,6 @@ chunk_overlap = 80-120 characters (15-20%)
 - Hybrid search (vectors + metadata)
 
 **Key takeaway:** ChromaDB makes searching 50,000 embeddings take <20ms
-
-**File:** `module_4_vector_databases.py`
 
 **Performance:**
 - 10K vectors: <10ms per query
@@ -152,8 +122,6 @@ chunk_overlap = 80-120 characters (15-20%)
 
 **Key takeaway:** Temperature = 0.1-0.3 is CRITICAL for factual RAG answers
 
-**File:** `module_5_langchain_lcel.py` or `module_5_definitive.py`
-
 **Anti-hallucination settings:**
 ```python
 temperature = 0.1  # Low = factual
@@ -172,8 +140,6 @@ prompt = "Use ONLY the context provided..."
 - Performance optimization
 
 **Key takeaway:** 40% of queries can skip retrieval → 40% cost savings!
-
-**File:** `module_6_agentic_layer.py`
 
 **Routing strategies:**
 1. **Keyword-based** - Fast, simple (good for obvious cases)
@@ -389,32 +355,6 @@ Document(
 )
 # Enables citations and filtering!
 ```
-
----
-
-## 📖 Module Files
-
-```
-agentic-rag-pipeline/
-├── README.md (this file)
-├── module_1_document_loading.py
-├── module_2_text_chunking.py
-├── module_3_embeddings.py
-├── module_4_vector_databases.py
-├── module_5_langchain_lcel.py
-├── module_5_definitive.py (alternative version)
-├── module_6_agentic_layer.py
-├── requirements.txt
-├── examples/
-│   ├── basic_rag_example.py
-│   ├── production_rag_example.py
-│   └── sample_documents/
-└── docs/
-    ├── architecture.md
-    ├── deployment.md
-    └── troubleshooting.md
-```
-
 ---
 
 ## 🚀 Advanced Topics
@@ -475,12 +415,6 @@ Contributions are welcome! Please:
 
 ---
 
-## 📝 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
 ## 🙏 Acknowledgments
 
 **Inspired by:**
@@ -498,9 +432,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📧 Contact
 
-**Your Name** - [@yourtwitter](https://twitter.com/yourtwitter)
+**Your Name** - [@Linkedin](https://www.linkedin.com/in/sanyam-sharma-ml/)
 
-Project Link: [https://github.com/yourusername/agentic-rag-pipeline](https://github.com/yourusername/agentic-rag-pipeline)
+Project Link: [https://github.com/sanyamsh7/Agentic-RAG-Pipeline-From-Scratch](https://github.com/sanyamsh7/Agentic-RAG-Pipeline-From-Scratch)
 
 **Questions? Issues?**
 - Open an issue on GitHub
