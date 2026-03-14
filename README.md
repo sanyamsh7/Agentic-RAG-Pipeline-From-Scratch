@@ -219,7 +219,7 @@ prompt = "Use ONLY the context provided..."
 |-----------|-----------|------|
 | **Embeddings** | sentence-transformers<br/>(all-MiniLM-L6-v2) | Fast, 384D, semantic search |
 | **Vector Database** | ChromaDB | Open-source, HNSW indexing, local |
-| **LLM** | Flan-T5-base | Instruction-following, runs on CPU |
+| **LLM** | Flan-T5-large | Instruction-following, runs on CPU |
 | **Framework** | LangChain + LCEL | Production patterns, composable |
 | **Language** | Python 3.8+ | Rich ML ecosystem |
 
